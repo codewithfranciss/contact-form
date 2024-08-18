@@ -1,4 +1,32 @@
+# Node.js
 node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 .env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build and cache files
 build/
+dist/
+.cache/
+
+# Operating system files
 .DS_Store
+
+# React (Client)
+client/build/
+client/.env.local
+client/.env.development.local
+client/.env.test.local
+client/.env.production.local
+
+# Node (Server)
+server/node_modules/
+server/.env
