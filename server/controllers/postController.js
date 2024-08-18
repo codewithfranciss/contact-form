@@ -17,13 +17,13 @@ exports.getPosts = async (req, res) => {
 // @desc     Create a post
 // @access   Public
 exports.createPost = async (req, res) => {
-  const { title, content, author } = req.body;
+  const { name, email, message } = req.body;
 
   try {
     const newPost = new Post({
-      title,
-      content,
-      author,
+      name,
+      email,
+      message,
     });
 
     const post = await newPost.save();
